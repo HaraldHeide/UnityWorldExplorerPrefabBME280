@@ -6,9 +6,11 @@ public class BME280 : MonoBehaviour
 {
     [SerializeField]
     GameObject myPrefab;
+
+
+    private ParticleSystem[] ps;
     private void Awake()
     {
-        
     }
     void Start ()
     {
@@ -16,10 +18,17 @@ public class BME280 : MonoBehaviour
         float humidity = 67.5f;
         float pressure = 100200.5f;
         myPrefab.GetComponentInChildren<TextMesh>().text = $"Temperature: {temperature}\nHumidity: {humidity}\nPressure: {pressure} ";
-	}
-	
-	// Update is called once per frame
-	void Update ()
+
+        ps = myPrefab.GetComponentsInChildren<ParticleSystem>();
+        foreach(var p in ps)
+        {
+            var psMain = p.main;
+            psMain.startColor = Color.blue;
+        }
+    }
+
+    // Update is called once per frame
+    void Update ()
     {
 	}
 }
