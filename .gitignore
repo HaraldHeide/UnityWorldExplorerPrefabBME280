@@ -17,6 +17,7 @@ sysinfo.txt
 [Pp]ackages/
 ###
 # VS/MD solution and project files
+.vs/
 ###
 [Ee]xportedObj/
 *.booproj
