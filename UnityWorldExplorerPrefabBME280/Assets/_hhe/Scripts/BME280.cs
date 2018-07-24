@@ -7,11 +7,8 @@ public class BME280 : MonoBehaviour
     [SerializeField]
     GameObject myPrefab;
 
-
     private ParticleSystem[] ps;
-    private void Awake()
-    {
-    }
+
     void Start ()
     {
         float temperature = 23.5f;
@@ -26,9 +23,4 @@ public class BME280 : MonoBehaviour
             psMain.startColor = Color.blue;
         }
     }
-
-    // Update is called once per frame
-    void Update ()
-    {
-	}
 }
