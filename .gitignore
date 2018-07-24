@@ -2,17 +2,19 @@
 # Unity folders and files
 ###
 [Aa]ssets/AssetStoreTools*
+[Aa]ssets/AssetStoreTools/
 [Bb]uild/
 [Ll]ibrary/
 [Ll]ocal[Cc]ache/
 [Oo]bj/
 [Tt]emp/
 [Uu]nityGenerated/
+
 # file on crash reports
 sysinfo.txt
 # Unity3D generated meta files
 *.pidb.meta
-
+[Pp]ackages/
 ###
 # VS/MD solution and project files
 ###
@@ -39,3 +41,5 @@ sysinfo.txt
 Icon?
 ehthumbs.db
 Thumbs.db
+*.meta
+UnityWorldExplorerPrefabBME280/Assets/AssetStoreTools/MagicArsenal/Demo/Scenes/Textures/crate_n.png
